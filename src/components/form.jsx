@@ -44,8 +44,8 @@ export default function Form ({list, setList}){
     }
 
     return(
-        <form onSubmit={()=>handleSetList(event)} className="flex justify-between w-[69%] mx-auto mt-4 gap-3">
-            <input id='input' ref={inputRef} type="text" placeholder="add task here ..." className="px-3 w-full py-[6px] bg-[#f2f2f2] outline-[#ff6600] rounded-md" onChange={()=>handleOnChange(event)}/>
+        <form onSubmit={()=>handleSetList(event)} className="flex justify-between laptop:w-[69%] mx-auto mt-4 gap-3 mobile-sm:w-[85%]">
+            <input id='input' ref={inputRef} type="text" placeholder="add task here ..." className="px-3 w-full py-[6px] bg-[#f2f2f2] outline-[#ff6600] rounded-md " onChange={()=>handleOnChange(event)}/>
             <button className="bg-[#ffd699] py-1 px-4 rounded-md text-[#ff6600]" type="submit">Add</button>
         </form>
     )
